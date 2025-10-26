@@ -117,6 +117,7 @@
             animation: edgePulse 3s infinite alternate;
             z-index: 10;
         }
+
         .image-spotlight-container::before {
             content: '';
             position: absolute;
@@ -134,6 +135,7 @@
             z-index: 2;
             pointer-events: none;
         }
+
         .product-image-style {
             max-width: 90%;
             transform: perspective(1200px) rotateX(8deg) rotateY(0deg) scale(1.1);
@@ -142,10 +144,12 @@
             filter: drop-shadow(0 0 20px rgba(255, 0, 0, 1)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
             transition: all 0.5s;
         }
+
         .product-image-style:hover {
             transform: perspective(1200px) rotateX(0deg) scale(1.15);
             filter: drop-shadow(0 0 40px rgba(255, 50, 50, 1)) drop-shadow(0 0 20px rgba(255, 255, 255, 1));
         }
+
         .gallery-image-container {
             background-color: rgba(0, 0, 0, 0.8);
             border: 1px solid rgba(180, 0, 0, 0.5);
@@ -169,6 +173,7 @@
         .gallery-image:hover {
             transform: scale(1.05);
         }
+
         @media (max-width: 768px) {
             .product-title {
                 font-size: 3.5rem;
@@ -179,6 +184,79 @@
                 margin-top: 20px;
                 max-width: 90%;
             }
+        }
+
+        .scroll-to-top-cta {
+            background-color: #B40000;
+            color: #FFFFFF;
+            font-weight: 700;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(180, 0, 0, 0.8);
+            transition: all 0.3s;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        .scroll-to-top-cta:hover {
+            background-color: #D30000;
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(211, 0, 0, 1);
+        }
+
+        .feature-card {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(180, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(180, 0, 0, 0.8);
+        }
+
+        .key-features-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            text-shadow: 0 0 15px rgba(255, 0, 0, 1), 0 0 8px rgba(255, 255, 255, 0.5);
+            margin-bottom: 50px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .feature-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #FF5555;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .feature-spec {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #FFFFFF;
+            display: block;
+            margin-bottom: 15px;
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+        }
+
+        .copyright-text {
+            color: #FFFFFF;
+            font-size: 0.85rem;
+            margin-top: 100px;
+            padding-bottom: 20px;
+            opacity: 0.7;
         }
     </style>
 </head>
@@ -229,7 +307,67 @@
             </div>
 
         </div>
+        <div class="row mt-5 pt-4 justify-content-center pb-5">
+            <div class="col-12 mb-5">
+                <h2 class="key-features-title">THE SHIFT: CORE SPECS</h2>
+            </div>
 
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-card">
+                    <div class="feature-title">SCIENTIFIC ANGLE</div>
+                    <span class="feature-spec">25° TILTED POSTURE</span>
+                    <p class="text-secondary small">Patented design supports the hand's ideal position, minimizing
+                        static muscle tension and actively preventing RSI.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-card">
+                    <div class="feature-title">ADAPTIVE SHIFT</div>
+                    <span class="feature-spec">AMBIDEXTROUS SWITCH</span>
+                    <p class="text-secondary small">Instantly toggle between left and right hand use via a button,
+                        promoting equal workload distribution and user flexibility.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-card">
+                    <div class="feature-title">DUAL CONNECTION</div>
+                    <span class="feature-spec">BLUETOOTH & WIRED</span>
+                    <p class="text-secondary small">Utilize stable Bluetooth® for wireless freedom (4-6 weeks of battery
+                        life) or connect via USB cable for uninterrupted use while charging.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-card">
+                    <div class="feature-title">PRECISION TRACKING</div>
+                    <span class="feature-spec">1000 DPI SENSOR</span>
+                    <p class="text-secondary small">Fixed optimal speed "BlueRay Track" sensor ensures precise, smooth,
+                        and comfortable cursor control on virtually any surface.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="feature-card">
+                    <div class="feature-title">PERFECT FIT</div>
+                    <span class="feature-spec">S, M, L SIZING</span>
+                    <p class="text-secondary small">Proper fit is essential for comfort. Available in three sizes to
+                        ensure a glove-like grip and maximum ergonomic benefit.</p>
+                </div>
+            </div>
+
+            <div class="col-12 text-center pt-5">
+                <a href="#hero-start" class="btn scroll-to-top-cta text-uppercase">
+                    Secure Your Shift Today &uarr;
+                </a>
+
+                <div class="copyright-text">
+                    &copy; 2025 HandShoe Shift, All Rights Reserved. Showcased by Czylle Johanne Magpantay.
+                </div>
+            </div>
+
+        </div>
     </div>
 </body>
 
